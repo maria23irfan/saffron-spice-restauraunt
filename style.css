@@ -1,0 +1,683 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 100;
+
+}
+
+
+
+nav {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.logo {
+
+    font-size: 28px;
+    letter-spacing: 1px;
+
+}
+
+
+
+.nav-links {
+
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+
+}
+
+
+
+.nav-links a {
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.nav-links a:hover {
+
+    color: #d9a441;
+
+}
+
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+.hero {
+
+
+    min-height: 100vh;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+
+    url("heroBG.avif?auto=format&fit=crop&w=1600&q=85");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+    display: flex;
+
+    align-items: center;
+
+
+}
+
+
+
+.hero-content {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+
+}
+
+
+
+.small-heading {
+
+
+    color: #d9a441;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+.hero h2 {
+
+
+    font-size: clamp(50px,8vw,90px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+
+}
+
+
+
+.hero-content p:not(.small-heading) {
+
+
+    max-width: 500px;
+
+    font-size: 18px;
+
+    color: #ddd;
+
+    margin-bottom: 30px;
+
+
+}
+
+
+
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+.btn {
+
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+
+    background: #d9a441;
+
+    color: #111;
+
+
+    font-weight: bold;
+
+
+    transition: 0.3s;
+
+
+}
+
+
+
+.btn:hover {
+
+
+    background: white;
+
+    transform: translateY(-4px);
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MENU / DISHES
+========================= */
+
+
+.featured {
+
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+
+    padding: 100px 0;
+
+
+    text-align: center;
+
+
+}
+
+
+
+.featured h2 {
+
+
+    font-size: 45px;
+
+    margin-bottom: 50px;
+
+
+}
+
+
+
+.dish-container {
+
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+
+}
+
+
+
+.dish {
+
+
+    background: #1b1b1b;
+
+    padding-bottom: 25px;
+
+
+    transition: 0.3s;
+
+
+}
+
+
+
+.dish:hover {
+
+
+    transform: translateY(-10px);
+
+
+}
+
+
+
+.dish img {
+
+
+    height: 250px;
+
+    object-fit: cover;
+
+
+}
+
+
+
+.dish h3 {
+
+
+    font-size: 25px;
+
+    margin: 20px 0 10px;
+
+
+}
+
+
+
+.dish p {
+
+
+    color:#bbb;
+
+    padding:0 20px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.dish span {
+
+
+    color:#d9a441;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+
+.about-preview {
+
+
+    min-height:500px;
+
+
+    display:flex;
+
+    align-items:center;
+
+
+
+    background:
+
+
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+
+
+    url("footer.avif?auto=format&fit=crop&w=1600&q=85");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+}
+
+
+
+.about-preview div {
+
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:auto;
+
+
+}
+
+
+
+.about-preview h2 {
+
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.about-preview p:not(.small-heading) {
+
+
+    color:#ccc;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   RESERVATION
+========================= */
+
+
+.reservation {
+
+
+    text-align:center;
+
+    padding:100px 20px;
+
+
+    background:#d9a441;
+
+    color:#111;
+
+
+}
+
+
+
+.reservation h2 {
+
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.reservation p {
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.reservation .btn {
+
+
+    background:#111;
+
+    color:white;
+
+
+}
+
+
+
+.reservation .btn:hover {
+
+
+    background:white;
+
+    color:#111;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer {
+
+
+    background:#080808;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+
+}
+
+
+
+footer h2 {
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+footer p {
+
+
+    color:#999;
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+nav {
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.nav-links {
+
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+
+}
+
+
+
+.hero {
+
+
+    text-align:center;
+
+
+}
+
+
+
+.hero-content p:not(.small-heading){
+
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+
+}
+
+
+
+.dish-container {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.featured h2,
+.about-preview h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.reservation h2 {
+
+
+    font-size:30px;
+
+
+}
+
+
+
+}
